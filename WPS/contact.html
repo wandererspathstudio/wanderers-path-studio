@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Wanderer’s Path Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <button id="sfx-toggle" class="sfx-btn" aria-label="Toggle Sound Effects">🔊 SFX: ON</button>
+
+    <nav class="site-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo sound-click">WANDERER'S PATH STUDIO</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="sound-click">Home</a></li>
+                <li><a href="games.html" class="sound-click">Our Games</a></li>
+                <li><a href="about.html" class="sound-click">About Us</a></li>
+                <li><a href="contact.html" class="active sound-click">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p class="subtitle">Direct Business, Legal & Game Inquiries</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-grid">
+
+            <div class="contact-card">
+                <h2>Send a Message</h2>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! We will contact you shortly.');">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required placeholder="Publishing, Business, or General">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required placeholder="Your Message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-filled-red sound-click">SEND MESSAGE</button>
+                </form>
+            </div>
+
+            <div class="info-card">
+                <h2>Official Studio Details</h2>
+                <p class="notice-text">Wanderer’s Path Studio is a registered independent game studio. For legal, publishing, or business inquiries, official address details are provided upon direct request or via official store listings.</p>
+
+                <h3>Official Profiles</h3>
+                <div class="links-group">
+                    <a href="https://wandererspath.itch.io" target="_blank" rel="noopener" class="sound-click">itch.io Developer Page</a>
+                    <a href="https://www.artstation.com/wandererspathstudio" target="_blank" rel="noopener" class="sound-click">ArtStation Studio GDD Hub</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">Wanderer’s Path Studio</span>
+                <p>&copy; 2026 Wanderer's Path Studio. All rights reserved.</p>
+            </div>
+            <div class="footer-col">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social-links">
+                <a href="https://wandererspath.itch.io" target="_blank" rel="noopener">itch.io</a>
+                <a href="https://www.artstation.com/wandererspathstudio" target="_blank" rel="noopener">ArtStation</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

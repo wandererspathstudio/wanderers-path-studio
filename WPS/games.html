@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Games | Wanderer’s Path Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <button id="sfx-toggle" class="sfx-btn" aria-label="Toggle Sound Effects">🔊 SFX: ON</button>
+
+    <nav class="site-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo sound-click">WANDERER'S PATH STUDIO</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="sound-click">Home</a></li>
+                <li><a href="games.html" class="active sound-click">Our Games</a></li>
+                <li><a href="about.html" class="sound-click">About Us</a></li>
+                <li><a href="contact.html" class="sound-click">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Game Catalog</h1>
+            <p class="subtitle">Filter and explore mobile, web, and PC titles.</p>
+
+            <div class="filter-group">
+                <button class="filter-btn active sound-click" data-filter="all">ALL</button>
+                <button class="filter-btn sound-click" data-filter="mobile">MOBILE (PLAY STORE)</button>
+                <button class="filter-btn sound-click" data-filter="pc">WEB & ITCH.IO</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="project-grid">
+
+            <!-- What Was My Life -->
+            <article class="project-card" data-category="pc">
+                <div class="card-media">
+                    <img src="assets/images/what-was-my-life-poster.jpg" alt="What Was My Life Poster">
+                </div>
+                <div class="card-content">
+                    <span class="platform-badge">2D Atmospheric Platformer</span>
+                    <h3>What Was My Life?</h3>
+                    <p class="description">A memory-based 2D platformer focused on exploration, story progression, and unlocking fragmented memories.</p>
+                    <div class="links-group">
+                        <a href="https://wandererspath.itch.io/what-was-my-life" target="_blank" rel="noopener" class="sound-click">Play on itch.io</a>
+                        <a href="https://www.artstation.com/wandererspathstudio" target="_blank" rel="noopener" class="sound-click">View GDD</a>
+                        <span class="status-tag live">Live on itch.io</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Pearl Farming (Belongs to both Mobile and PC/Itch.io) -->
+            <article class="project-card" data-category="mobile pc">
+                <div class="card-media">
+                    <img src="assets/images/pearl-farming-poster.jpg" alt="Pearl Farming Poster">
+                </div>
+                <div class="card-content">
+                    <span class="platform-badge">2D Clicker Simulator</span>
+                    <h3>Pearl Farming</h3>
+                    <p class="description">A casual 2D clicker simulator centered around resource collection, crafting mechanics, and tank upgrades.</p>
+                    <div class="links-group">
+                        <a href="https://wandererspath.itch.io/pearl-farming" target="_blank" rel="noopener" class="sound-click">Play on itch.io</a>
+                        <a href="https://www.artstation.com/wandererspathstudio" target="_blank" rel="noopener" class="sound-click">View GDD</a>
+                        <span class="status-tag pending">Play Store Pending</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Hydra Go! -->
+            <article class="project-card" data-category="mobile">
+                <div class="card-media">
+                    <img src="assets/images/hydra-go-poster.jpg" alt="Hydra Go! Poster">
+                </div>
+                <div class="card-content">
+                    <span class="platform-badge">2D Arcade Platformer</span>
+                    <h3>Hydra Go!</h3>
+                    <p class="description">A fast-paced 2D arcade platformer featuring vibrant mechanics, environmental revival, and bug-fighting action.</p>
+                    <div class="links-group">
+                        <a href="https://www.artstation.com/wandererspathstudio" target="_blank" rel="noopener" class="sound-click">View GDD</a>
+                        <span class="status-tag dev">In Development</span>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">Wanderer’s Path Studio</span>
+                <p>&copy; 2026 Wanderer's Path Studio. All rights reserved.</p>
+            </div>
+            <div class="footer-col">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social-links">
+                <a href="https://wandererspath.itch.io" target="_blank" rel="noopener">itch.io</a>
+                <a href="https://www.artstation.com/wandererspathstudio" target="_blank" rel="noopener">ArtStation</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
