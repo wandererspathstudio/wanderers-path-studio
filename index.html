@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderer’s Path Studio | Independent Game Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Custom Glowing Pointer -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Audio Toggle -->
+    <button id="sfx-toggle" class="sfx-btn" aria-label="Toggle Sound Effects">🔊 SFX: ON</button>
+
+    <!-- Navigation -->
+    <nav class="site-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo sound-click">WANDERER'S PATH STUDIO</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active sound-click">Home</a></li>
+                <li><a href="games.html" class="sound-click">Our Games</a></li>
+                <li><a href="about.html" class="sound-click">About Us</a></li>
+                <li><a href="contact.html" class="sound-click">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container hero-content">
+            <h1 class="hero-title glow-text">Crafting worlds, step by step.</h1>
+            <p class="hero-subtitle">Wanderer's Path Studio is an independent development studio focused on crafting atmospheric 2D visual and gameplay experiences across mobile and web platforms.</p>
+            <div class="hero-cta-group">
+                <a href="games.html" class="btn btn-filled-red sound-click">EXPLORE OUR GAMES</a>
+                <a href="contact.html" class="btn btn-outline-white sound-click">GET IN TOUCH</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Release Showcase -->
+    <main class="container">
+        <section class="section-block">
+            <h2 class="section-title">Featured Releases</h2>
+
+            <div class="project-grid">
+                <!-- What Was My Life -->
+                <article class="project-card" data-category="pc">
+                    <div class="card-media">
+                        <img src="assets/images/what-was-my-life-poster.jpg" alt="What Was My Life Poster">
+                    </div>
+                    <div class="card-content">
+                        <span class="platform-badge">PC Platformer</span>
+                        <h3>What Was My Life?</h3>
+                        <p class="description">A memory-based 2D platformer focused on exploration, story progression, and unlocking fragmented memories.</p>
+
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/ZZr5viHjMBE" title="What Was My Life Gameplay" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="links-group">
+                            <a href="https://wandererspath.itch.io/what-was-my-life" target="_blank" rel="noopener" class="sound-click">Play on itch.io</a>
+                            <a href="https://www.artstation.com/wandererspathstudio" target="_blank" rel="noopener" class="sound-click">View GDD</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Pearl Farming -->
+                <article class="project-card" data-category="mobile pc">
+                    <div class="card-media">
+                        <img src="assets/images/pearl-farming-poster.jpg" alt="Pearl Farming Poster">
+                    </div>
+                    <div class="card-content">
+                        <span class="platform-badge">Mobile & Web Simulator</span>
+                        <h3>Pearl Farming</h3>
+                        <p class="description">A casual 2D clicker simulator centered around resource collection, crafting mechanics, and tank upgrades.</p>
+
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/lJn8ztpRzYA" title="Pearl Farming Gameplay" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="links-group">
+                            <a href="https://wandererspath.itch.io/pearl-farming" target="_blank" rel="noopener" class="sound-click">Play on itch.io</a>
+                            <a href="https://www.artstation.com/wandererspathstudio" target="_blank" rel="noopener" class="sound-click">View GDD</a>
+                            <span class="status-tag pending">Play Store Pending</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Recent Updates -->
+        <section class="section-block">
+            <h2 class="section-title">Recent Updates</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="news-date">October 2026</span>
+                    <h4>Google Play Store Submissions Underway</h4>
+                    <p>Pearl Farming mobile optimization updates are live. Preparing Google Play Console listing assets and store verification setup.</p>
+                </div>
+                <div class="news-card">
+                    <span class="news-date">September 2026</span>
+                    <h4>Hydra Go! GDD Published</h4>
+                    <p>Full Design Architecture document for Hydra Go! released on ArtStation highlighting level design and bug-fighting arcade mechanics.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <span class="footer-brand">Wanderer’s Path Studio</span>
+                <p>&copy; 2026 Wanderer's Path Studio. All rights reserved.</p>
+            </div>
+            <div class="footer-col">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social-links">
+                <a href="https://wandererspath.itch.io" target="_blank" rel="noopener">itch.io</a>
+                <a href="https://www.artstation.com/wandererspathstudio" target="_blank" rel="noopener">ArtStation</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
